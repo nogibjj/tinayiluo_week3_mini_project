@@ -1,6 +1,33 @@
 [![CI](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml)
 ## Template for Python Projects 
 
+Week 3: Polars Descriptive Statistics Script
+
+Requirements:
+
+Python script using Polars for descriptive statistics
+
+Read a dataset (CSV or Excel)
+
+Generate summary statistics (mean, median, standard deviation)
+
+Create at least one data visualization
+
+Grading Criteria:
+
+Correctly reads dataset (20 points)
+
+Accurate summary statistics (20 points)
+
+Data visualization (10 points)
+
+Deliverables:
+
+Python script
+
+Generated summary report (PDF or markdown)
+
+
 IDS 706 Mini-Project 1
 
 This Python GitHub template includes a `Makefile`, `requirements.txt`, `.devcontainer`, `.gitignore`, `GitHubActions`, and `Readme`.
