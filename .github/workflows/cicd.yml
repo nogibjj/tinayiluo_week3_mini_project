@@ -21,3 +21,18 @@ jobs:
         run: make format
       #- name: deploy
         #run: make deploy
+
+      - name: Archive and Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: ml_pipeline-artifacts
+          path: ${{ github.workspace }}/results
+
+      - name: Save to repository
+        run: |
+          echo GH_TOKEN: "${GH_TOKEN}"
+          git config --global user.name 'github-actions'
+          git config --local user.email "action@github.com"
+          git add .
+          git commit -m "Add results"
+          git push
